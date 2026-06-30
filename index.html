@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Fjord Studio</title>
+<meta name="description" content="Fjord Studio is an independent app studio based in Norway, building thoughtful, privacy-respecting apps for everyday life.">
+
+<!-- ⬇️ GOOGLE SEARCH CONSOLE: lim inn verifiserings-meta-taggen her når du verifiserer eierskap (vi gjør det sammen senere) -->
+<!-- <meta name="google-site-verification" content="DIN_KODE_HER"> -->
+
+<style>
+  :root { color-scheme: light dark; }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.65;
+    color: #0f1b24;
+    background: #f4f8fb;
+    -webkit-font-smoothing: antialiased;
+  }
+  a { color: #1f7a8c; }
+  .wrap { max-width: 860px; margin: 0 auto; padding: 0 24px; }
+
+  /* Hero */
+  header.hero {
+    background: linear-gradient(160deg, #0b2a3a 0%, #134b63 45%, #1f7a8c 100%);
+    color: #eaf4f8;
+    padding: 92px 0 84px;
+    text-align: center;
+  }
+  .brand {
+    display: inline-flex; align-items: center; gap: 12px;
+    font-size: 1.35rem; font-weight: 700; letter-spacing: .2px; margin-bottom: 34px;
+  }
+  .brand .mark {
+    width: 30px; height: 30px; border-radius: 9px;
+    background: linear-gradient(135deg, #7fd3e0, #2f9fb3);
+    box-shadow: 0 4px 18px rgba(47,159,179,.5);
+  }
+  header.hero h1 { font-size: clamp(2rem, 5vw, 3.1rem); line-height: 1.12; font-weight: 800; margin-bottom: 18px; }
+  header.hero p { font-size: clamp(1.05rem, 2.4vw, 1.3rem); color: #bfe0e9; max-width: 600px; margin: 0 auto; }
+
+  /* Sections */
+  section { padding: 56px 0; }
+  h2 { font-size: 1.5rem; margin-bottom: 14px; color: #0b2a3a; }
+  p.lead { font-size: 1.08rem; color: #324a57; }
+
+  .apps { background: #ffffff; border-top: 1px solid #e3edf3; border-bottom: 1px solid #e3edf3; }
+  .app-card {
+    display: flex; gap: 18px; align-items: flex-start;
+    padding: 22px; border: 1px solid #e3edf3; border-radius: 16px;
+    background: #fbfdfe; margin-top: 20px;
+  }
+  .app-card .icon {
+    flex: 0 0 auto; width: 54px; height: 54px; border-radius: 14px;
+    background: linear-gradient(135deg, #6d5dd3, #9b8cf0);
+    box-shadow: 0 6px 18px rgba(109,93,211,.35);
+  }
+  .app-card h3 { font-size: 1.15rem; margin-bottom: 4px; color: #0b2a3a; }
+  .app-card p { color: #44606e; font-size: .98rem; }
+
+  footer {
+    text-align: center; padding: 40px 24px 56px; color: #5b7682; font-size: .9rem;
+  }
+  footer strong { color: #324a57; }
+
+  @media (prefers-color-scheme: dark) {
+    body { background: #0c1419; color: #dce8ee; }
+    a { color: #6fc6d6; }
+    .apps { background: #101c23; border-color: #1d2e38; }
+    .app-card { background: #13222a; border-color: #1d2e38; }
+    h2, .app-card h3 { color: #eaf4f8; }
+    p.lead { color: #aac1cc; }
+    .app-card p { color: #9fb6c1; }
+    footer { color: #7e98a4; } footer strong { color: #aac1cc; }
+  }
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap">
+    <div class="brand"><span class="mark"></span> Fjord Studio</div>
+    <h1>Calm apps for everyday life.</h1>
+    <p>We design and build thoughtful, privacy-respecting mobile apps that help people stay close to what matters.</p>
+  </div>
+</header>
+
+<section>
+  <div class="wrap">
+    <h2>About</h2>
+    <p class="lead">Fjord Studio is an independent app studio based in Norway. We make a small number of carefully crafted apps, with a focus on warmth, simplicity, and respect for your privacy. The studio is operated by <strong>Langsæter Labs</strong>, a registered Norwegian sole proprietorship.</p>
+  </div>
+</section>
+
+<section class="apps">
+  <div class="wrap">
+    <h2>Our apps</h2>
+    <div class="app-card">
+      <div class="icon"></div>
+      <div>
+        <h3>Orbit</h3>
+        <p>A personal relationship CRM that helps you remember to stay in touch with the people who matter — gentle reminders, private notes, and a little help knowing what to say. <a href="https://heksatriacontan.github.io/orbit/">Privacy &amp; more →</a></p>
+      </div>
+    </div>
+    <div class="app-card">
+      <div class="icon" style="background:linear-gradient(135deg,#3fa34d,#7bc96f);box-shadow:0 6px 18px rgba(63,163,77,.35);"></div>
+      <div>
+        <h3>Pro Baseball Sim <span style="font-size:.7rem;font-weight:600;color:#3fa34d;border:1px solid #3fa34d;border-radius:999px;padding:2px 9px;vertical-align:middle;margin-left:6px;">Coming soon</span></h3>
+        <p>A deep, fully offline baseball simulation — build your franchise, manage your roster, and play out season after season. No internet, no accounts, no ads — just baseball. <a href="https://heksatriacontan.github.io/probaseballsim/privacy.html">Privacy &amp; terms →</a></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>Contact</h2>
+    <!-- bytt gjerne til en egen studio-epost når du har en -->
+    <p class="lead">Questions or feedback? Email us at <a href="mailto:orbitcircle@proton.me">orbitcircle@proton.me</a>.</p>
+  </div>
+</section>
+
+<footer>
+  © 2026 <strong>Fjord Studio</strong> · Operated by <strong>Langsæter Labs</strong> (org. 937 939 493) · Norway
+</footer>
+
+</body>
+</html>
